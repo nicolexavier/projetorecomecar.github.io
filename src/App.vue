@@ -1,26 +1,19 @@
 <template>
   <v-app>
-    <div class="d-flex flex-column h-100">
+    <div class="d-flex flex-column">
       <!-- Navigation bar -->
       <div class="d-flex align-center justify-space-around" id="navbar">
-        <div class="flex-same-width white--text font-weight-black">
-          (logo) Projeto Recomeçar
+        <div class="white--text font-weight-black">
+          [logo] Projeto Recomeçar
         </div>
-        <div class="flex-same-width">
-          <router-link to="/">Home</router-link> |
-          <router-link to="/about">About</router-link>
-        </div>
-        <div class="flex-same-width white--text">
+
+        <div class="white--text font-weight-black">
           Links
         </div>
       </div>
 
       <!-- Route visualization -->
-      <div id="background">
-        <div id="main-container" class="d-flex align-center justify-center">
-          <router-view />
-        </div>
-      </div>
+      <router-view />
     </div>
   </v-app>
 </template>
@@ -28,48 +21,54 @@
 <style lang="scss">
 // SASS variables
 $primary-color: #1cce1cd7;
+$secondary-color: #93a889;
 
 // Global configurations
+html {
+  overflow-x: none;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
 p {
   text-indent: 15px;
 }
 
 // General Classes
-.h-100 {
-  height: 100% !important;
+.container-spacing {
+  padding-left: 15vw;
+  padding-right: 15vw;
 }
 
-.flex-same-width {
-  display: flex;
-  justify-content: center;
-  flex: 1 1 0px;
+.h-100 {
+  height: 100vh !important;
+}
+
+.h-50 {
+  height: 50vh !important;
+}
+
+.w-100 {
+  width: 100vw !important;
 }
 
 .primary-color {
   color: $primary-color;
 }
 
+.secondary-color {
+  color: $secondary-color;
+}
+
 // Specific ID's
 #navbar {
-  height: 5%;
-  background-color: #000000;
-}
-
-#background {
-  height: 95%;
-  width: 100%;
-  // background-color: #1c1c1c;
-  background-image: url("./assets/background.jpeg") !important;
-  background-size: cover;
-}
-
-#main-container {
-  padding-left: 10vw;
-  padding-right: 10vw;
-
-  background-color: rgba(0, 0, 0, 0.7);
-
-  height: 100%;
-  width: 100%;
+  position: fixed;
+  height: 5vh;
+  width: 100vw;
+  background-color: #3e563e;
 }
 </style>
