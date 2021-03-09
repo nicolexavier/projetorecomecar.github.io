@@ -7,9 +7,12 @@
           [logo] Projeto Recomeçar
         </div>
 
-        <div class="white--text font-weight-black">
-          Links
-        </div>
+        <v-btn
+          style="color: black; background-color: white; font-weight: bold;"
+          href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing"
+          target="_blank"
+          >Inscrição</v-btn
+        >
       </div>
 
       <!-- Route visualization -->
