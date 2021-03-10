@@ -4,7 +4,7 @@
       <!-- Navigation bar -->
       <div class="d-flex align-center justify-space-around" id="navbar">
         <div class="white--text font-weight-black">
-          [logo] Projeto Recomeçar
+          Projeto Recomeçar
         </div>
 
         <v-btn

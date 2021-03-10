@@ -35,26 +35,53 @@
       style="height: 60vh;"
       id="second-section"
     >
+      <h1
+        class="text-h2 text-md-h1 text-center font-weight-bold secondary-color"
+      >
+        "Como a psicoterapia pode me ajudar?"
+      </h1>
+
+      <div class="d-flex flex-column pa-10">
+        <p
+          class="text-subtitle-1 black--text font-weight-bold text-justify mt-3"
+        >
+          A psicoterapia é um processo seu, que exigirá um trabalho colaborativo
+          entre o psicólogo e você.
+        </p>
+
+        <p class="text-subtitle-1 black--text font-weight-bold text-justify">
+          O psicólogo irá te auxiliar na busca por caminhos que façam sentido
+          para você, com intuito de alcançar seus objetivos, utilizando de
+          escuta sem julgamentos, empatia e acolhimento.
+        </p>
+      </div>
+    </div>
+
+    <div
+      class="d-flex flex-column flex-md-row align-center justify-center container-spacing"
+      style="height: 60vh; background-color: #93a889;"
+      id="third-section"
+    >
       <img src="../assets/atendimento.jpg" />
 
       <div class="d-flex flex-column pa-10">
-        <h1 class="text-h2 text-md-h1 font-weight-bold secondary-color">
+        <h1 class="text-h2 text-md-h1 font-weight-bold white--text">
           Participe!
         </h1>
 
-        <p class="text-subtitle-1 black--text text-justify mt-3">
-          Este projeto busca promover a acessibilidade ao atendimento
-          psicológico para a população. Este é um projeto autônomo, sem parceria
-          com instituições, feito por psicólogas.
+        <p class="text-subtitle-1 white--text text-justify mt-3">
+          Este projeto busca promover acessibilidade ao atendimento psicológico
+          para a população. Este é um projeto autônomo, sem parceria com
+          instituições, feito por psicólogas.
         </p>
 
-        <p class="text-subtitle-1 black--text text-justify">
+        <p class="text-subtitle-1 white--text text-justify">
           As sessões de atendimento serão exclusivamente online, com duração
-          entre 45 e 50 minutos semanalmente, e serão disponibilizadas de acordo
-          com a disponibilidade de agenda das psicólogas.
+          entre 45 e 50 minutos, semanalmente, e serão disponibilizadas de
+          acordo com a disponibilidade de agenda das psicólogas.
         </p>
 
-        <p class="text-subtitle-1 black--text text-justify">
+        <p class="text-subtitle-1 white--text text-justify">
           Para mais informações, se inscreva pelo formulário clicando no link
           abaixo:
         </p>
@@ -64,7 +91,7 @@
           id="subscribe-btn"
           href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing"
           target="_blank"
-          >Increva-se AQUI !</v-btn
+          >Increva-se</v-btn
         >
       </div>
     </div>
@@ -105,7 +132,7 @@ export default Vue.extend({
 #subscribe-btn {
   color: white;
   font-weight: bolder;
-  background-color: #93a889;
+  background-color: #40e0d0;
 }
 
 @media (max-width: 960px) {
@@ -122,7 +149,15 @@ export default Vue.extend({
   }
 
   #second-section {
-    margin-top: 25vh;
+    margin-top: 15vh;
+  }
+
+  #third-section {
+    margin-top: 10vh;
+
+    img {
+      margin-top: 60vh;
+    }
   }
 
   #footer {
