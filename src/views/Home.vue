@@ -1,6 +1,6 @@
 <template>
 	<div style="position: relative; height: 100%;">
-		<div style="height: 88vh;" id="about-background">
+		<div style="height: 96vh;" id="about-background">
 			<div
 				class="d-flex flex-column flex-md-row justify-center align-center container-spacing"
 				style="height: 100%; background-color: rgba(0,0, 0, 0.75); background-attachment: scroll !important;"
@@ -23,19 +23,19 @@
 
 						<br />
 
-						<span style="margin-left: 1.5rem">
+						<span style="margin-left: 1.3rem">
 							- Amanda Bernardes (CRP 01/2367-1)
 						</span>
 
 						<br />
 
-						<span style="margin-left: 1.5rem">
+						<span style="margin-left: 1.3rem">
 							- Fernando Fernandes (CRP 01/2364-7)
 						</span>
 
 						<br />
 
-						<span style="margin-left: 1.5rem">
+						<span style="margin-left: 1.3rem">
 							- Karoline Oliveira (CRP 01/2416-1)
 						</span>
 					</p>
