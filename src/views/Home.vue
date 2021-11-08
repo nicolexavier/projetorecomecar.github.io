@@ -9,17 +9,39 @@
 					<h1 class="text-h1 font-weight-bold secondary-color">Olá!</h1>
 
 					<p class="main-text white--text text-justify">
-						Somos as psicólogas <strong>Natália Ribeiro</strong> (CRP 01-23593) e <strong>Ruth Braga</strong> (CRP
-						01-20774), estamos disponibilizando vagas para atendimento social online.
+						Somos as psicólogas <strong>Natália Ribeiro</strong> (CRP 01/2359-3) e <strong>Ruth Braga</strong> (CRP
+						01/2077-4) e estamos disponibilizando vagas para atendimento social online.
 					</p>
 
 					<p class="main-text white--text text-justify">
 						Decidimos criar este projeto com o intuito de proporcionar à comunidade os conhecimentos que nos foram
 						adquiridos em nossos anos de formação e aprimoramento.
 					</p>
+
+					<p class="main-text white--text text-justify">
+						Além de nós, contamos também com a colaboração de outros psicólogos:
+
+						<br />
+
+						<span style="margin-left: 1.5rem">
+							- Amanda Bernardes (CRP 01/2367-1)
+						</span>
+
+						<br />
+
+						<span style="margin-left: 1.5rem">
+							- Fernando Fernandes (CRP 01/2364-7)
+						</span>
+
+						<br />
+
+						<span style="margin-left: 1.5rem">
+							- Karoline Oliveira (CRP 01/2416-1)
+						</span>
+					</p>
 				</div>
 
-				<img src="../assets/psicologo.jpg" />
+				<img src="../assets/psicologo2.jpg" />
 			</div>
 		</div>
 
@@ -93,7 +115,7 @@ export default Vue.extend({
 
 <style lang="scss">
 #about-background {
-	background-image: url('../assets/monstera.png') !important;
+	background-image: url('../assets/monstera_2.jpg') !important;
 	background-size: cover;
 	background-attachment: fixed;
 }
