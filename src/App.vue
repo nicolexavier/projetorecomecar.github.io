@@ -1,18 +1,11 @@
 <template>
   <v-app>
     <!-- Navigation bar -->
-    <div class="d-flex align-center justify-space-around" id="navbar">
+    <div class="d-flex align-center justify-center" id="navbar">
+			<img src="./assets/logo.png" style="width: 25px; height:25px; margin-right: 20px;"/>
       <div class="white--text font-weight-black">
         Projeto Recomeçar
       </div>
-
-      <v-btn
-        style="color: white; font-weight: bold; max-height: 3vh;"
-        color="primary"
-        href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing"
-        target="_blank"
-        >Inscrição</v-btn
-      >
     </div>
 
     <!-- Route visualization -->

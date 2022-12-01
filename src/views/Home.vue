@@ -1,10 +1,7 @@
 <template>
 	<div style="position: relative; height: 100%;">
-		<div style="height: 96vh;" id="about-background">
-			<div
-				class="d-flex flex-column flex-md-row justify-center align-center container-spacing"
-				style="height: 100%; background-color: rgba(0,0, 0, 0.75); background-attachment: scroll !important;"
-			>
+		<div id="about-background">
+			<div class="d-flex flex-column flex-md-row justify-center align-center container-spacing" style="height: 100%; background-color: rgba(0,0, 0, 0.75); background-attachment: scroll !important;">
 				<div class="d-flex flex-column px-11 py-4 pr-md-16 pa-md-10">
 					<h1 class="text-h1 font-weight-bold secondary-color">Olá!</h1>
 
@@ -38,19 +35,28 @@
 						<span style="margin-left: 1.3rem">
 							- Karoline Oliveira (CRP 01/2416-1)
 						</span>
+
+						<br />
+
+						<span style="margin-left: 1.3rem">
+							- Nicole Xavier (CRP 01/2371-8)
+						</span>
 					</p>
 				</div>
 
-				<img src="../assets/psicologo2.jpg" />
+				<img src="../assets/psicologo2-min.jpg" />
 			</div>
 		</div>
 
 		<div class="d-flex flex-column flex-md-row align-center justify-center container-spacing pt-10 pb-md-10">
-			<h1 class="text-h2 text-md-h1 text-center font-weight-bold secondary-color">
-				“Como a psicoterapia pode me ajudar?”
-			</h1>
+			<div class="col-content-start">
+				<h1 class="text-h2 text-md-h1 text-center font-weight-bold secondary-color">
+					“Como a psicoterapia pode me ajudar?”
+				</h1>
+			</div>
 
-			<div class="d-flex flex-column py-5 px-11">
+
+			<div class="d-flex flex-column py-5 px-12 px-md-0 ml-md-10 col-content-end">
 				<p class="main-text black--text font-weight-bold text-justify mt-3">
 					A psicoterapia é um processo seu, que exigirá um trabalho colaborativo entre o psicólogo e você.
 				</p>
@@ -60,16 +66,30 @@
 					objetivos; utilizando de escuta sem julgamentos, empatia e acolhimento, além de técnicas comportamentais
 					baseadas em evidências.
 				</p>
+
+				<p class="main-text black--text font-weight-bold text-justify">
+					No nosso projeto, contamos também com psicólogos que possuem pós graduação em terapia de casal, sendo assim, o projeto também abarca casais que precisem de psicoterapia com este objetivo. 
+				</p>
+
+				<p class="main-text black--text font-weight-bold text-justify">
+					<strong>Se seu objetivo for apenas psicoterapia individual, se inscreva através do formulário no fim da página.</strong>
+				</p>
+
+				<p class="main-text black--text font-weight-bold text-justify">
+					Caso o atendimento seja para casal, inscreva-se através do formulário abaixo:
+				</p>
+
+				<v-btn class="mt-5 mb-14 mb-md-5" id="subscribe-btn" color="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfFJJ3fQbypv95pxyihUSqZuPaCCWxHMARnz6bpOp0bcN1Vqw/viewform" target="_blank">INSCREVA-SE PARA TERAPIA DE CASAL</v-btn>
 			</div>
 		</div>
 
-		<div
-			class="d-flex flex-column flex-md-row align-center justify-center container-spacing pt-10 pb-md-16"
-			style="background-color: #93a889;"
-		>
-			<img src="../assets/atendimento.jpg" />
+		<div class="d-flex flex-column flex-md-row align-center justify-center container-spacing pt-10 pb-md-16" style="background-color: #93a889;">
+			<div class="col-content-start">
+				<img src="../assets/atendimento.jpg" />
+			</div>
+			
 
-			<div class="d-flex flex-column py-6 px-11 ml-md-10">
+			<div class="d-flex flex-column py-6 px-12 px-md-0 ml-md-10 col-content-end">
 				<h1 class="text-h2 text-md-h1 font-weight-bold white--text">
 					Participe!
 				</h1>
@@ -88,19 +108,12 @@
 					Para mais informações, se inscreva pelo formulário clicando no link abaixo:
 				</p>
 
-				<v-btn
-					class="mt-5 mb-14 mb-md-5"
-					id="subscribe-btn"
-					color="primary"
-					href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing"
-					target="_blank"
-					>Increva-se</v-btn
-				>
+				<v-btn class="mt-5 mb-14 mb-md-5" id="subscribe-btn" color="primary" href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing" target="_blank">INSCREVA-SE PARA PSICOTERAPIA INDIVIDUAL</v-btn>
 			</div>
 		</div>
 
 		<div id="footer">
-			© 2021 - Direitos reservados às sócias do Projeto Recomeçar.
+			© 2022 - Direitos reservados às sócias do Projeto Recomeçar.
 		</div>
 	</div>
 </template>
@@ -115,7 +128,7 @@ export default Vue.extend({
 
 <style lang="scss">
 #about-background {
-	background-image: url('../assets/monstera_2.jpg') !important;
+	background-image: url('../assets/monstera_2-min.jpg') !important;
 	background-size: cover;
 	background-attachment: fixed;
 }
@@ -148,6 +161,10 @@ export default Vue.extend({
 		padding-left: 0;
 		padding-right: 0;
 	}
+
+	#about-background {
+		height: 105vh;
+	}
 }
 
 @media (min-width: 960px) {
@@ -161,6 +178,18 @@ export default Vue.extend({
 	.container-spacing {
 		padding-left: 12vw;
 		padding-right: 12vw;
+	}
+
+	.col-content-start {
+		width: 40%;
+	}
+
+	.col-content-end {
+		width: 60%;
+	}
+
+	#about-background {
+		height: 95vh;
 	}
 }
 </style>
