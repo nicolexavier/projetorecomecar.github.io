@@ -38,10 +38,10 @@ p {
 }
 
 // General Classes
-.container-spacing {
-  padding-left: 15vw;
-  padding-right: 15vw;
-}
+// .container-spacing {
+//   padding-left: 15vw;
+//   padding-right: 15vw;
+// }
 
 .h-100 {
   height: 100vh !important;

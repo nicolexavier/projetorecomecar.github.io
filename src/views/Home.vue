@@ -2,7 +2,7 @@
 	<div style="position: relative; height: 100%;">
 		<div id="about-background">
 			<div class="d-flex flex-column flex-md-row justify-center align-center container-spacing" style="height: 100%; background-color: rgba(0,0, 0, 0.75); background-attachment: scroll !important;">
-				<div class="d-flex flex-column px-11 py-4 pr-md-16 pa-md-10">
+				<div class="d-flex flex-column px-8 py-4 pr-md-16 pa-md-10">
 					<h1 class="text-h1 font-weight-bold secondary-color">Olá!</h1>
 
 					<p class="main-text white--text text-justify">
@@ -56,7 +56,7 @@
 			</div>
 
 
-			<div class="d-flex flex-column py-5 px-12 px-md-0 ml-md-10 col-content-end">
+			<div class="d-flex flex-column py-5 px-8 ml-md-10 col-content-end">
 				<p class="main-text black--text font-weight-bold text-justify mt-3">
 					A psicoterapia é um processo seu, que exigirá um trabalho colaborativo entre o psicólogo e você.
 				</p>
@@ -79,17 +79,17 @@
 					Caso o atendimento seja para casal, inscreva-se através do formulário abaixo:
 				</p>
 
-				<v-btn class="mt-5 mb-14 mb-md-5" id="subscribe-btn" color="primary" href="https://docs.google.com/forms/d/e/1FAIpQLSfFJJ3fQbypv95pxyihUSqZuPaCCWxHMARnz6bpOp0bcN1Vqw/viewform" target="_blank">INSCREVA-SE PARA TERAPIA DE CASAL</v-btn>
+				<v-btn class="mt-5 mb-14 mb-md-5 subscribe-btn" color="primary" style="font-weight: bold; color:white;" href="https://docs.google.com/forms/d/e/1FAIpQLSfFJJ3fQbypv95pxyihUSqZuPaCCWxHMARnz6bpOp0bcN1Vqw/viewform" target="_blank">INSCREVA-SE PARA TERAPIA DE CASAL</v-btn>
 			</div>
 		</div>
 
 		<div class="d-flex flex-column flex-md-row align-center justify-center container-spacing pt-10 pb-md-16" style="background-color: #93a889;">
 			<div class="col-content-start">
-				<img src="../assets/atendimento.jpg" />
+				<img src="../assets/atendimento.jpg"/>
 			</div>
 			
 
-			<div class="d-flex flex-column py-6 px-12 px-md-0 ml-md-10 col-content-end">
+			<div class="d-flex flex-column py-6 px-8 ml-md-10 col-content-end">
 				<h1 class="text-h2 text-md-h1 font-weight-bold white--text">
 					Participe!
 				</h1>
@@ -108,7 +108,7 @@
 					Para mais informações, se inscreva pelo formulário clicando no link abaixo:
 				</p>
 
-				<v-btn class="mt-5 mb-14 mb-md-5" id="subscribe-btn" color="primary" href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing" target="_blank">INSCREVA-SE PARA PSICOTERAPIA INDIVIDUAL</v-btn>
+				<v-btn class="mt-5 mb-14 mb-md-5 subscribe-btn" color="primary" style="font-weight: bold; color:white;" href="https://docs.google.com/forms/d/1KVUyfst4wL4fvyX1bqX_lesBq6Sqa1OtkSjs4hIG-VE/edit?usp=sharing" target="_blank">INSCREVA-SE PARA PSICOTERAPIA INDIVIDUAL</v-btn>
 			</div>
 		</div>
 
@@ -131,11 +131,6 @@ export default Vue.extend({
 	background-image: url('../assets/monstera_2-min.jpg') !important;
 	background-size: cover;
 	background-attachment: fixed;
-}
-
-#subscribe-btn {
-	color: white;
-	font-weight: bolder;
 }
 
 #footer {
@@ -163,7 +158,15 @@ export default Vue.extend({
 	}
 
 	#about-background {
-		height: 105vh;
+		height: 100vh;
+	}
+
+	.subscribe-btn {
+		font-size: 0.7rem!important;
+	}
+
+	.col-content-end {
+		width: 100%;
 	}
 }
 
@@ -190,6 +193,10 @@ export default Vue.extend({
 
 	#about-background {
 		height: 95vh;
+	}
+
+	.subscribe-btn {
+		font-size: 1rem;
 	}
 }
 </style>
