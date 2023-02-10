@@ -21,13 +21,13 @@
 						<br />
 
 						<span style="margin-left: 1.3rem">
-							- Amanda Bernardes (CRP 01/2367-1)
+							- Fernando Fernandes (CRP 01/2364-7)
 						</span>
 
 						<br />
 
 						<span style="margin-left: 1.3rem">
-							- Fernando Fernandes (CRP 01/2364-7)
+							- Izabela Cristina Pereira Cordeiro (CRP 01/2256-8)
 						</span>
 
 						<br />
@@ -36,15 +36,10 @@
 							- Karoline Oliveira (CRP 01/2416-1)
 						</span>
 
-						<br />
-
-						<span style="margin-left: 1.3rem">
-							- Nicole Xavier (CRP 01/2371-8)
-						</span>
 					</p>
 				</div>
 
-				<img src="../assets/psicologo2-min.jpg" />
+				<img src="../assets/psicologo2-minified.jpg" />
 			</div>
 		</div>
 
@@ -85,7 +80,7 @@
 
 		<div class="d-flex flex-column flex-md-row align-center justify-center container-spacing pt-10 pb-md-16" style="background-color: #93a889;">
 			<div class="col-content-start">
-				<img src="../assets/atendimento.jpg"/>
+				<img src="../assets/atendimento-minified.jpg"/>
 			</div>
 			
 
@@ -113,7 +108,7 @@
 		</div>
 
 		<div id="footer">
-			© 2022 - Direitos reservados às sócias do Projeto Recomeçar.
+			© 2023 - Direitos reservados às sócias do Projeto Recomeçar.
 		</div>
 	</div>
 </template>
@@ -127,12 +122,6 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-#about-background {
-	background-image: url('../assets/monstera_2-min.jpg') !important;
-	background-size: cover;
-	background-attachment: fixed;
-}
-
 #footer {
 	color: grey;
 	font-size: 0.8rem;
@@ -145,6 +134,13 @@ export default Vue.extend({
 }
 
 @media (max-width: 960px) {
+	#about-background {
+		background-image: url('../assets/monstera_2-minified.jpg') !important;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
 	img {
 		width: 30vh;
 		height: 30vh;
@@ -171,6 +167,14 @@ export default Vue.extend({
 }
 
 @media (min-width: 960px) {
+	#about-background {
+		background-image: url('../assets/monstera_2-minified.jpg') !important;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-attachment: fixed;
+	}
+	
 	img {
 		width: 50vh;
 		height: 50vh;

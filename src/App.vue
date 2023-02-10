@@ -2,7 +2,9 @@
   <v-app>
     <!-- Navigation bar -->
     <div class="d-flex align-center justify-center" id="navbar">
-			<img src="./assets/logo.png" style="width: 25px; height:25px; margin-right: 20px;"/>
+      <div style="background-color: white; border-radius: 20px; width: 30px; height:30px; margin-right: 20px;">
+        <img src="./assets/logo-minified.png" style="object-fit: cover; width: 100%; height: 100%; padding: 3px;"/>
+      </div>
       <div class="white--text font-weight-black">
         Projeto Recomeçar
       </div>
@@ -69,7 +71,7 @@ p {
 
 // Specific ID's
 #navbar {
-  height: 5vh;
+  height: 6vh;
   background-color: #3e563e;
 }
 
