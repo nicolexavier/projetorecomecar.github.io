@@ -45,7 +45,7 @@
 
 		<div class="d-flex flex-column flex-md-row align-center justify-center container-spacing pt-10 pb-md-10">
 			<div class="col-content-start">
-				<h1 class="text-h2 text-md-h1 text-center font-weight-bold secondary-color">
+				<h1 id="left-side-title" class="text-center font-weight-bold secondary-color">
 					“Como a psicoterapia pode me ajudar?”
 				</h1>
 			</div>
@@ -203,4 +203,17 @@ export default Vue.extend({
 		font-size: 1rem;
 	}
 }
+
+@media (max-width: 1400px) {
+	#left-side-title {
+		font-size: 4rem;
+	}
+}
+
+@media (min-width: 1400px) {
+	#left-side-title {
+		font-size: 5rem;
+	}
+}
+
 </style>
