@@ -134,6 +134,11 @@ export default Vue.extend({
 }
 
 @media (max-width: 960px) {
+	#left-side-title {
+		font-size: 4rem;
+		line-height: 4.5rem;
+	}
+	
 	#about-background {
 		background-image: url('../assets/monstera_2-minified.jpg') !important;
 		background-position: center;
